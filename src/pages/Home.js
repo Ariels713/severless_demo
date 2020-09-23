@@ -1,9 +1,14 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
+import HomeStyles from "../styled/HomeStyles.js";
+import { Accent, StyledTitle } from "../styled/SpanStyle.js";
 const Home = () => {
   return (
     <div>
-      <h1>Home</h1>
+      <StyledTitle>Ready To Type?</StyledTitle>
+      <HomeStyles to="/game">
+        Click To Type <Accent>'s'</Accent> to start playing!{" "}
+      </HomeStyles>
     </div>
   );
 };

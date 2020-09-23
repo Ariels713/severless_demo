@@ -5,8 +5,8 @@ import {
   LogoStyles,
   NavItems,
   StyledLink,
-  Accent,
 } from "../styled/NavBarStyles.js";
+import { Accent } from "../styled/SpanStyle.js";
 const NavBar = () => {
   return (
     <NavBarStyles>
