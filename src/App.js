@@ -1,6 +1,6 @@
 import React from "react";
 //router
-import { Switch, Route, Link } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 //components
 import Game from "./pages/Game.js";
 import HighScores from "./pages/HighScores.js";

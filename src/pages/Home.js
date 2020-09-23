@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import HomeStyles from "../styled/HomeStyles.js";
 import { Accent, StyledTitle } from "../styled/SpanStyle.js";
 const Home = () => {
