@@ -1,4 +1,4 @@
-exports.handler = (event, context, callback) => {
+exports.handler = async (event, context, callback) => {
   return {
     statusCode: 200,
     body: JSON.stringify({
@@ -7,3 +7,5 @@ exports.handler = (event, context, callback) => {
     }),
   };
 };
+
+// keyAy8mTUaFqRq5q3
