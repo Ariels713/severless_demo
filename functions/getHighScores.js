@@ -10,7 +10,14 @@ const table = base.table(process.env.AIRTABLE_TABLE);
 
 exports.handler = async (event) => {
   try {
-    const records = await table.select({}).firstPage();
+    const records = await table
+      .select({
+        //Allows us to add filters
+        sort: [{ field: "score", direction: "desc" }],
+        filterByFormula: `AND(name !== ", score > 0)`,
+      })
+      .firstPage();
+
     const filteredRecords = records.map((record) => ({
       id: record.id,
       fields: record.fields,
