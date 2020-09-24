@@ -31,3 +31,6 @@ function App() {
 }
 
 export default App;
+// Issies with deployment, follow these steps
+// https://community.netlify.com/t/netlify-not-building-command-failed-with-exit-code-1-npm-run-build/16999/16
+//
