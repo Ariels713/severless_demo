@@ -3,7 +3,7 @@ exports.handler = async (event, context, callback) => {
     statusCode: 200,
     body: JSON.stringify({
       // We must always stringify our body.
-      msg: "Hello World",
+      msg: "hola mundo",
     }),
   };
 };
